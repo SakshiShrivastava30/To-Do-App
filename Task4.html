@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced To-Do App</title>
+  <link rel="stylesheet" href="Task4.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🌟 To-Do App</h1>
+      <button id="theme-toggle">🌓</button>
+    </header>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Task..." required />
+      <input type="datetime-local" id="task-datetime" required />
+      <select id="task-category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <select id="task-priority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="filters">
+      <select id="filter-category">
+        <option value="All">All Categories</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+      <select id="filter-priority">
+        <option value="All">All Priorities</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="Task4.js"></script>
+</body>
+</html>
